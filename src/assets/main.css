@@ -1,0 +1,48 @@
+@import './base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: rgba(66, 153, 225, 0.1); /* Lighter blue hover effect */
+  }
+}
+
+/* Add some basic theme colors */
+:root {
+  --primary-color: #4299e1; /* Blue */
+  --secondary-color: #4ecdc4; /* Turquoise */
+  --text-color: #2c363f; /* Dark slate for text */
+  --bg-color: #ffffff; /* White background */
+  --accent-color: #ffe66d; /* Yellow accent */
+  --light-gray: #f7f7f7; /* Light gray for sections */
+  --border-color: #e0e0e0; /* Light border color */
+}
+
+/* Basic text styling */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Link styling */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
